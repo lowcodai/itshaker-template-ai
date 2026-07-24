@@ -1,0 +1,35 @@
+name: AI Safety Check
+
+on:
+  push:
+    paths:
+      - 'prompts/**'
+      - 'agents/**'
+      - 'mcp/**'
+  pull_request:
+    paths:
+      - 'prompts/**'
+      - 'agents/**'
+      - 'mcp/**'
+
+jobs:
+  safety-scan:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check for secrets in prompts
+        run: |
+          echo "Scanning prompts/ and agents/ for secrets..."
+          if grep -rI -E "(password|secret|api_key|token)\s*[:=]\s*['\"]?[a-zA-Z0-9_\-]{8,}" prompts/ agents/ 2>/dev/null; then
+            echo "::error::Potential secret found in AI assets"
+            exit 1
+          fi
+          echo "No secrets found."
+      - name: Validate agent files
+        run: |
+          echo "Validating .agent.md files..."
+          for f in $(find agents/ -name "*.agent.md" 2>/dev/null); do
+            if ! grep -q "^# " "$f"; then
+              echo "::warning::Agent file missing title: $f"
+            fi
+          done
