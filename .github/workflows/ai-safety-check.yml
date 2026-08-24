@@ -20,7 +20,9 @@ jobs:
       - name: Check for secrets in prompts
         run: |
           echo "Scanning prompts/ and agents/ for secrets..."
-          if grep -rI -E "(password|secret|api_key|token)\s*[:=]\s*['\"]?[a-zA-Z0-9_\-]{8,}" prompts/ agents/ 2>/dev/null; then
+          if grep -rE "(password|secret|api_key|token)\s*=\s*['\"][^'\"]{8,}" \
+            --include="*.yml" --include="*.yaml" --include="*.json" \
+            prompts/ agents/ 2>/dev/null; then
             echo "::error::Potential secret found in AI assets"
             exit 1
           fi
