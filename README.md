@@ -63,7 +63,7 @@ This repo's AI-specific hooks:
 | `session-logger` | Logs AI/Copilot session activity |
 | `attester-import-check` | Verifies supply-chain import provenance |
 
-See [governance hooks registry](https://github.com/lowcodai/itshaker-copilot-governance/blob/main/docs/awesome-copilot-map.md) for the full list.
+See `.github/copilot-instructions.md` for this repo's full active hooks list, and the [governance hooks registry](https://github.com/lowcodai/itshaker-copilot-governance/blob/main/docs/awesome-copilot-map.md) for the full ecosystem-wide catalog.
 
 ## References
 
