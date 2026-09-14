@@ -1,18 +1,18 @@
 # Prompts
 
-Placer ici les prompts versionnés du projet.
+Place the project's versioned prompts here.
 
-## Convention de nommage
-`<domaine>-<action>-v<version>.md`
+## Naming convention
+`<domain>-<action>-v<version>.md`
 
-Exemple : `rag-summarize-v1.md`
+Example: `rag-summarize-v1.md`
 
-## Métadonnées requises
+## Required metadata
 ```yaml
 ---
 version: "1.0.0"
-author: "<votre-github-handle>"
-purpose: "Description courte du but du prompt"
+author: "<your-github-handle>"
+purpose: "Short description of the prompt's purpose"
 model: "gpt-4o | claude-3-5-sonnet | ..."
 reviewed: false
 ---

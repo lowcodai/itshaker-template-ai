@@ -1,24 +1,24 @@
 # Agents
 
-Placer ici les fichiers `.agent.md` définissant les agents du projet.
+Place the `.agent.md` files defining the project's agents here.
 
-## Format d'un agent
+## Agent format
 
 ```markdown
-# Nom de l'agent
+# Agent name
 
 ## Description
-Rôle et objectif de cet agent.
+Role and objective of this agent.
 
-## Instructions système
+## System instructions
 ...
 
-## Outils disponibles
-- outil-1
-- outil-2
+## Available tools
+- tool-1
+- tool-2
 ```
 
-## Agents recommandés (depuis awesome-copilot)
-- `adr-generator.agent.md` — Génère des ADRs
-- `ai-readiness-reporter.agent.md` — Évalue la maturité IA
-- `agent-governance-reviewer.agent.md` — Review de gouvernance
+## Recommended agents (from awesome-copilot)
+- `adr-generator.agent.md` — Generates ADRs
+- `ai-readiness-reporter.agent.md` — Assesses AI maturity
+- `agent-governance-reviewer.agent.md` — Governance review
