@@ -25,6 +25,7 @@ This project covers: AI agents, MCP servers, prompts, RAG pipelines, LLM orchest
 
 ## Hooks in use
 - `tool-guardian`, `secrets-scanner`, `governance-audit`
+- `dependency-license-checker`, `fix-broken-links`
 - `session-logger`, `attester-import-check`
 
 ## Instructions references
@@ -33,5 +34,5 @@ This project covers: AI agents, MCP servers, prompts, RAG pipelines, LLM orchest
 - `.github/instructions/ai-prompt-engineering-safety-best-practices.instructions.md`
 
 ## References
-- Governance: https://github.com/itshaker/itshaker-copilot-governance
+- Governance: https://github.com/lowcodai/itshaker-copilot-governance
 - Awesome Copilot: https://github.com/github/awesome-copilot

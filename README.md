@@ -1,62 +1,72 @@
 # itshaker-template-ai
 
-> Template pour projets IA, agents, MCP, prompts, RAG, LLM.
+> Template for AI, agent, MCP, prompt, RAG, and LLM projects.
 
-[![Governance](https://img.shields.io/badge/governance-itshaker-blue)](https://github.com/itshaker/itshaker-copilot-governance)
+[![Governance](https://img.shields.io/badge/governance-lowcodai-blue)](https://github.com/lowcodai/itshaker-copilot-governance)
 
 ## Description
 
-Template GitHub pour projets d'intelligence artificielle itshaker. Inclut tout `itshaker-template-base` plus :
-- Structure agents, prompts, MCP, RAG
-- Instructions de gouvernance IA (safety, prompt engineering)
-- Hooks spécialisés IA (session-logger, attester-import-check)
-- Workflow AI Safety Check
-- Éléments Awesome Copilot IA (acreadiness, arize, agentic-eval…)
+GitHub template for lowcodai artificial intelligence projects. Includes everything from `itshaker-template-base` plus:
+- Agents, prompts, MCP, and RAG structure
+- AI governance instructions (safety, prompt engineering)
+- AI-specific hooks (session-logger, attester-import-check)
+- AI Safety Check workflow
+- AI-specific Awesome Copilot elements (acreadiness, arize, agentic-eval…)
 
-## Utilisation
+## Usage
 
 ```bash
 cd itshaker-bootstrap
-./scripts/new-project.sh --type ai --name <mon-projet-ia>
+./scripts/new-project.sh --type ai --name <my-ai-project>
 ```
 
-## Structure spécifique IA
+## AI-specific structure
 
 ```
 .
-├── agents/     # Fichiers .agent.md — définitions d'agents
-├── prompts/    # Prompts versionnés avec métadonnées
-├── mcp/        # Serveurs MCP (Model Context Protocol)
-├── rag/        # Pipelines RAG (chunking, indexing, retrieval)
-└── llm-wiki/   # Documentation des modèles et comportements observés
+├── agents/     # .agent.md files — agent definitions
+├── prompts/    # Versioned prompts with metadata
+├── mcp/        # MCP servers (Model Context Protocol)
+├── rag/        # RAG pipelines (chunking, indexing, retrieval)
+└── llm-wiki/   # Documentation of models and observed behaviors
 ```
 
-## Safety & Gouvernance IA
+## AI Safety & Governance
 
-Tous les projets IA doivent respecter la politique `ai-usage-policy.md` de la gouvernance itshaker.
+All AI projects must comply with the `ai-usage-policy.md` policy from lowcodai governance.
 
-Avant chaque merge :
-1. Review des prompts avec `ai-prompt-engineering-safety-review`
-2. Validation des agents avec `agent-governance`
-3. Compliance OWASP LLM Top 10 via `agent-owasp-compliance`
+Before every merge:
+1. Review prompts with `ai-prompt-engineering-safety-review`
+2. Validate agents with `agent-governance`
+3. Check OWASP LLM Top 10 compliance via `agent-owasp-compliance`
 
-## Éléments Awesome Copilot spécifiques
+## AI-specific Awesome Copilot elements
 
-| Élément | Type | Usage |
+| Element | Type | Usage |
 |---------|------|-------|
-| `agent-safety.instructions.md` | Instruction | Safety pour agents |
-| `ai-prompt-engineering-safety-best-practices.instructions.md` | Instruction | Safety prompts |
-| `session-logger` | Hook | Log des sessions Copilot |
-| `acreadiness-assess` | Skill | Évaluation maturité IA |
-| `agent-governance` | Skill | Gouvernance agent |
-| `agentic-eval` | Skill | Évaluation comportement agent |
-| `ai-prompt-engineering-safety-review` | Skill | Review safety prompts |
+| `agent-safety.instructions.md` | Instruction | Safety for agents |
+| `ai-prompt-engineering-safety-best-practices.instructions.md` | Instruction | Prompt safety |
+| `acreadiness-assess` | Skill | AI maturity assessment |
+| `agent-governance` | Skill | Agent governance |
+| `agentic-eval` | Skill | Agent behavior evaluation |
+| `ai-prompt-engineering-safety-review` | Skill | Prompt safety review |
 | `agent-owasp-compliance` | Skill | OWASP LLM compliance |
-| `arize-instrumentation` | Skill | Observabilité LLM |
-| `acreadiness-cockpit` | Plugin | Tableau de bord maturité IA |
+| `arize-instrumentation` | Skill | LLM observability |
+| `acreadiness-cockpit` | Plugin | AI maturity dashboard |
 
-## Références
+## Hooks
 
-- [itshaker-copilot-governance](https://github.com/itshaker/itshaker-copilot-governance)
+This repo's AI-specific hooks:
+
+| Hook | Usage |
+|------|-------|
+| `session-logger` | Logs AI/Copilot session activity |
+| `attester-import-check` | Verifies supply-chain import provenance |
+
+See [governance hooks registry](https://github.com/lowcodai/itshaker-copilot-governance/blob/main/docs/awesome-copilot-map.md) for the full list.
+
+## References
+
+- [itshaker-copilot-governance](https://github.com/lowcodai/itshaker-copilot-governance)
 - [OWASP LLM Top 10](https://owasp.org/www-project-top-10-for-large-language-model-applications/)
 - [github/awesome-copilot](https://github.com/github/awesome-copilot)
