@@ -34,5 +34,5 @@ This project covers: AI agents, MCP servers, prompts, RAG pipelines, LLM orchest
 - `.github/instructions/ai-prompt-engineering-safety-best-practices.instructions.md`
 
 ## References
-- Governance: https://github.com/lowcodai/itshaker-copilot-governance
+- Governance: https://github.com/lowcodai/vibecoding-copilot-governance
 - Awesome Copilot: https://github.com/github/awesome-copilot

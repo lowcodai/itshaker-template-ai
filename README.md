@@ -1,12 +1,12 @@
-# itshaker-template-ai
+# vibecoding-template-ai
 
 > Template for AI, agent, MCP, prompt, RAG, and LLM projects.
 
-[![Governance](https://img.shields.io/badge/governance-lowcodai-blue)](https://github.com/lowcodai/itshaker-copilot-governance)
+[![Governance](https://img.shields.io/badge/governance-lowcodai-blue)](https://github.com/lowcodai/vibecoding-copilot-governance)
 
 ## Description
 
-GitHub template for lowcodai artificial intelligence projects. Includes everything from `itshaker-template-base` plus:
+GitHub template for lowcodai artificial intelligence projects. Includes everything from `vibecoding-template-base` plus:
 - Agents, prompts, MCP, and RAG structure
 - AI governance instructions (safety, prompt engineering)
 - AI-specific hooks (session-logger, attester-import-check)
@@ -16,7 +16,7 @@ GitHub template for lowcodai artificial intelligence projects. Includes everythi
 ## Usage
 
 ```bash
-cd itshaker-bootstrap
+cd vibecoding-bootstrap
 ./scripts/new-project.sh --type ai --name <my-ai-project>
 ```
 
@@ -63,10 +63,10 @@ This repo's AI-specific hooks:
 | `session-logger` | Logs AI/Copilot session activity |
 | `attester-import-check` | Verifies supply-chain import provenance |
 
-See `.github/copilot-instructions.md` for this repo's full active hooks list, and the [governance hooks registry](https://github.com/lowcodai/itshaker-copilot-governance/blob/main/docs/awesome-copilot-map.md) for the full ecosystem-wide catalog.
+See `.github/copilot-instructions.md` for this repo's full active hooks list, and the [governance hooks registry](https://github.com/lowcodai/vibecoding-copilot-governance/blob/main/docs/awesome-copilot-map.md) for the full ecosystem-wide catalog.
 
 ## References
 
-- [itshaker-copilot-governance](https://github.com/lowcodai/itshaker-copilot-governance)
+- [vibecoding-copilot-governance](https://github.com/lowcodai/vibecoding-copilot-governance)
 - [OWASP LLM Top 10](https://owasp.org/www-project-top-10-for-large-language-model-applications/)
 - [github/awesome-copilot](https://github.com/github/awesome-copilot)
